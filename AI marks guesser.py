@@ -3,9 +3,6 @@ weights = np.random.randn(2)
 while True:
  cmd = input("Enter 'start' to proceed or 'Q' to quit: ").lower()
  if cmd == 'start':
-  
-
-  print(weights)
 
   hours_studied = int(input("Enter the hours studied: "))
   hours_slept = int(input("Enter the hours slept: "))
@@ -13,7 +10,6 @@ while True:
   inputs = np.array([hours_studied, hours_slept])
 
   predicted_score = np.dot(inputs, weights) 
-  print(f"The predicted score is - {predicted_score}")
   actual_score = int(input("Enter your actual score: "))
   
   
@@ -28,9 +24,7 @@ while True:
         
   print(f"Predicted score - {predicted_score}, Actual score - {actual_score}")
       
-          
-
-
+         
      
  elif cmd == 'q':
     print('goodbye!')
