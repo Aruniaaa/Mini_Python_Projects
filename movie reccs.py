@@ -1,11 +1,22 @@
 import numpy as np
 
+
 action_like = int(input("On a scale of 10, how much do you like action? "))
+print("""
+
+⊹˚₊‧───────────────‧₊˚⊹
+
+""")
 romance_like = int(input("On a scale of 10, how much do you like romance? "))
+print("""
+
+⊹˚₊‧───────────────‧₊˚⊹
+
+""")
 category = input("""Are you in the mood for hollywood, bollywood, or mixed?
-H - Hollywood
-B - Bollywood
-M - Mixed
+H - Hollywood 🍷
+B - Bollywood 🦢
+M - Mixed 🌙
 Your answer --> """).lower()
 
 def recommend_movies(action_like, romance_like, movies_dict):
@@ -39,12 +50,19 @@ def recommend_movies(action_like, romance_like, movies_dict):
     movie3 = dic.get(item3)
     movie3 = tuple(movie3)
 
+    print("""
+
+⊹˚₊‧───────────────‧₊˚⊹
+
+""")
+
 
     print(f"""Film recommendations based on your choices:
 1. {movies_dict.get(movie)}
 2. {movies_dict.get(movie2)}
 3. {movies_dict.get(movie3)}
 Enjoy watching!🍿💗""")
+
 
 
 
@@ -58,4 +76,5 @@ elif category == 'm':
     from movies import mixed_movies
     recommend_movies(action_like, romance_like, mixed_movies)
 else:
-    print("Please enter a valid category and try again!")
+    print("Please enter a valid category and try again!🌟")
+
