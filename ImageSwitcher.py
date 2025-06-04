@@ -1,4 +1,4 @@
-
+# Remember to change line 35, 53, and 57 to your desired image file's name!!!
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
