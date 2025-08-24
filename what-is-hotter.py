@@ -42,7 +42,7 @@ max_temp, avg = get_weather(longitude, latitude)
 reddit = praw.Reddit(
     client_id=client_id,
     client_secret=secret,
-    user_agent="script:what-is-hotter:v1.0 (by /u/Malaficient-Fall-3246)"
+    user_agent="YOUR USER AGENT HERE"
 )
 
 subreddit = reddit.subreddit("confession")
